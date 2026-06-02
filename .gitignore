@@ -1,2 +1,4 @@
 todo-docker/data/*
 !todo-docker/data/.gitkeep
+
+.venv/

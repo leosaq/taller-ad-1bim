@@ -1,92 +1,103 @@
-# Taller ORM con SQLAlchemy, PostgreSQL y MariaDB
+# Evidencias del Proyecto
 
+## Creación de Base de Datos
 
-### Evidencia
+<img width="1897" height="1088" alt="CreacionBaseDeDatos" src="https://github.com/user-attachments/assets/292a9a3c-476c-4923-bebb-26b6fb794ed2" />
 
-![Creación Base de Datos](evidencias/CreacionBaseDeDatos.png)
 
 ---
 
-## Evidencias
+## Población de Tabla Facultad
 
-### Facultad
+<img width="1905" height="1077" alt="PoblarTablaFacultad" src="https://github.com/user-attachments/assets/43a00aef-43f0-4c46-adaf-7b25cff5bea0" />
 
-![Facultad](evidencias/PoblarTablaFacultad.png)
 
-### Carrera
+---
 
-![Carrera](evidencias/PoblarTablaCarrera.png)
+## Población de Tabla Carrera
 
-### Profesor
+<img width="1903" height="1108" alt="PoblarTablaCarrera" src="https://github.com/user-attachments/assets/829148fa-4220-4a62-b9d7-79a8c9c9c8ae" />
 
-![Profesor](evidencias/PoblarTablaProfesor.png)
 
-### Recurso Académico
+---
 
-![Recurso](evidencias/PoblarTablaRecurso.png)
+## Población de Tabla Profesor
+
+<img width="1783" height="1099" alt="PoblarTablaProfesor" src="https://github.com/user-attachments/assets/98185d02-deaa-4020-8d68-be71636fb91d" />
+
+
+---
+
+## Población de Tabla Recurso Académico
+
+<img width="1802" height="1081" alt="PoblarTablaRecurso" src="https://github.com/user-attachments/assets/2df526f3-3986-4e64-9b8e-84b58fefe070" />
+
 
 ---
 
 # PostgreSQL
 
-Se levantaron los servicios utilizando Docker Compose.
+## Esquema de Tablas
+<img width="199" height="118" alt="image" src="https://github.com/user-attachments/assets/d1d887e0-03a3-4192-98b7-0b1af3100306" />
 
-Servicios utilizados:
+---
 
-- PostgreSQL
-- pgAdmin
+## Tabla Facultad en PostgreSQL
 
-Posteriormente se configuró SQLAlchemy para conectarse a PostgreSQL y se ejecutó la creación y carga de datos.
+<img width="844" height="803" alt="PostGresFacultad" src="https://github.com/user-attachments/assets/1765aac9-4f1c-464a-82c0-bc3f3841b797" />
 
-## Evidencias
+---
 
-### Facultad
+## Tabla Carrera en PostgreSQL
 
-![Postgres Facultad](evidencias/PostgresFacultad.png)
+<img width="773" height="930" alt="PostgresCarrera" src="https://github.com/user-attachments/assets/de28a6a4-cbef-4838-91be-1ed5f9e4b574" />
 
-### Carrera
+---
 
-![Postgres Carrera](evidencias/PostgresCarrera.png)
+## Tabla Profesor en PostgreSQL
 
-### Profesor
+<img width="822" height="948" alt="PostgresProfesor" src="https://github.com/user-attachments/assets/3f9842b1-e9f9-4e50-a871-73af3cb90140" />
 
-![Postgres Profesor](evidencias/PostgresProfesor.png)
+---
 
-### Recursos Académicos
+## Tabla Recurso Académico en PostgreSQL
 
-![Postgres Recursos](evidencias/PostgresRecursos.png)
+<img width="813" height="933" alt="PostgresRecursos" src="https://github.com/user-attachments/assets/7365eac3-47fd-4582-b559-4c4a53cfeb01" />
 
 ---
 
 # MariaDB
 
-Se configuró SQLAlchemy para conectarse a MariaDB mediante PyMySQL.
+## Visualización de Tablas en MariaDB
 
-Posteriormente se ejecutó nuevamente la creación de tablas y la carga de datos utilizando los mismos scripts ORM.
+<img width="208" height="156" alt="image" src="https://github.com/user-attachments/assets/d0031532-7fc8-4441-8d50-0d91ded187a5" />
+---
 
-La verificación se realizó mediante phpMyAdmin.
+## Tabla Facultad en MariaDB
 
-## Evidencias
+<img width="1367" height="677" alt="image" src="https://github.com/user-attachments/assets/1cd15e58-c4ce-48e0-8979-fade47296917" />
 
-### Facultad
 
-![PHP Facultad](evidencias/PHPTablaFacultad.png)
+---
 
-### Carrera
+## Tabla Carrera en MariaDB
 
-![PHP Carrera](evidencias/PHPTablaCarrera.png)
+<img width="1297" height="763" alt="image" src="https://github.com/user-attachments/assets/a285e3ee-3614-470e-809e-a7cd0e9e4184" />
 
-### Profesor
 
-![PHP Profesor](evidencias/PHPTablaProfesor.png)
+---
 
-### Recursos Académicos
+## Tabla Profesor en MariaDB
 
-![PHP Recursos](evidencias/PHPTablaRecursos.png)
+<img width="1309" height="829" alt="image" src="https://github.com/user-attachments/assets/1c22e028-f296-421c-bb36-b4e834727fc7" />
 
-### Consulta MariaDB
 
-![MariaDB](evidencias/ConsultasMariaDB.png)
+---
+
+## Tabla Recurso Académico en MariaDB
+
+<img width="1412" height="864" alt="image" src="https://github.com/user-attachments/assets/7667035a-79a0-4249-ad60-5e9dea861d17" />
+
 
 ---
 
@@ -94,114 +105,45 @@ La verificación se realizó mediante phpMyAdmin.
 
 ## Consulta ALL
 
-Obtiene todos los registros de la entidad Facultad.
+<img width="731" height="1020" alt="ConsultaAll" src="https://github.com/user-attachments/assets/3b6af652-a045-4228-8d40-fe69d1d42262" />
 
-```bash
-python consulta_all.py
-```
-
-### Evidencia
-
-![Consulta ALL](evidencias/ConsultaAll.png)
 
 ---
 
 ## Consulta FILTER
 
-Filtra registros utilizando una condición específica.
-
-```bash
-python consulta_filter.py
-```
-
-### Evidencia
-
-![Consulta FILTER](evidencias/ConsultaFilter.png)
+<img width="729" height="1005" alt="ConsultaFilter" src="https://github.com/user-attachments/assets/aa2afd83-ac70-492a-81a7-bc6b2b63db11" />
 
 ---
 
 ## Consulta ORDER BY
 
-Ordena registros utilizando un atributo determinado.
+<img width="715" height="1078" alt="ConsultaOrderBy" src="https://github.com/user-attachments/assets/66bc65f7-ce5b-4318-9107-07cccc7e04e7" />
 
-```bash
-python consulta_order_by.py
-```
-
-### Evidencia
-
-![Consulta ORDER BY](evidencias/ConsultaOrderBy.png)
 
 ---
 
 ## Consulta OR
 
-Realiza consultas utilizando el operador lógico OR.
-
-```bash
-python consulta_or.py
-```
-
-### Evidencia
-
-![Consulta OR](evidencias/ConsultaOR.png)
+<img width="725" height="1101" alt="ConsultaOR" src="https://github.com/user-attachments/assets/7c1fb4ff-73ca-4dd6-95cb-42cc34d656fc" />
 
 ---
 
 ## Consulta AND
 
-Realiza consultas utilizando el operador lógico AND.
-
-```bash
-python consulta_and.py
-```
-
-### Evidencia
-
-![Consulta AND](evidencias/ConsultaAnd.png)
+<img width="751" height="1038" alt="ConsultaAND" src="https://github.com/user-attachments/assets/dd31d3d6-f2d9-4780-9f82-bc1145c3ed54" />
 
 ---
 
 ## Consulta Nueva
 
-Presenta los recursos académicos de una facultad específica.
+### Recursos académicos de una facultad específica
 
-```bash
-python consulta_nueva.py
-```
-
-### Evidencia
-
-![Consulta Nueva](evidencias/ConsultaNueva.png)
+<img width="620" height="563" alt="ConsultaNueva" src="https://github.com/user-attachments/assets/275b9a8f-247b-4ee8-97ff-141fd6ddde20" />
 
 ---
 
-# Ejecución del Proyecto
+## Archivo de configuración con las URL de conexion con los diferentes motores
 
-## Crear las tablas
+<img width="906" height="369" alt="image" src="https://github.com/user-attachments/assets/afa08cd4-33db-4d0a-944e-da1e7fec9cdb" />
 
-```bash
-python crear_base_entidades.py
-```
-
-## Poblar las tablas
-
-```bash
-python poblar_base1.py
-python poblar_base2.py
-python poblar_base3.py
-python poblar_base4.py
-```
-
-## Ejecutar consultas
-
-```bash
-python consulta_all.py
-python consulta_filter.py
-python consulta_order_by.py
-python consulta_or.py
-python consulta_and.py
-python consulta_nueva.py
-```
-
----
